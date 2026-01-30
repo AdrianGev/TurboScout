@@ -27,7 +27,6 @@ const TopNav = ({ activeTab, onTabChange, onLogoClick }) => {
           ))}
         </div>
         <div className="nav-right">
-          {/* Removed dropdowns - clean interface */}
         </div>
       </div>
     </div>
