@@ -1,5 +1,3 @@
-// src/sw.js
-
 export function registerSW() {
   if (process.env.NODE_ENV !== "production") return;
   if (!("serviceWorker" in navigator)) return;
@@ -10,7 +8,6 @@ export function registerSW() {
         `${process.env.PUBLIC_URL}/service-worker.js` 
       );
 
-      // If there's already a waiting SW, activate it and reload immediately
       if (reg.waiting) {
         reg.waiting.postMessage({ type: "SKIP_WAITING" });
         window.location.reload();
@@ -23,14 +20,13 @@ export function registerSW() {
 
         newWorker.addEventListener("statechange", () => {
           if (newWorker.state === "installed" && navigator.serviceWorker.controller) {
-            // New version ready -> activate and reload
             newWorker.postMessage({ type: "SKIP_WAITING" });
             window.location.reload();
           }
         });
       });
     } catch (e) {
-      // ignore
+      // ignore it lol
     }
   });
 }
