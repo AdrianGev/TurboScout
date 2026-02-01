@@ -1,3 +1,3 @@
-# TurboScout
+# turboscout
 
 cool scouting app

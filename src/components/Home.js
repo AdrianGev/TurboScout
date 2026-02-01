@@ -16,7 +16,7 @@ const Home = ({ onNavigate }) => {
     <div className="home-page">
       <div className="island-card">
         <div className="island-header">
-          <h2>Welcome to TurboScout</h2>
+          <h2>Welcome to turboscout</h2>
           <p className="island-subtitle">Your Ultimate FRC Scouting Assistant</p>
         </div>
         <div className="tiles-container">
