@@ -12,7 +12,7 @@ const TopNav = ({ activeTab, onTabChange, onLogoClick }) => {
             <div className="logo-icon">
               <i className="bi bi-robot me-2"></i>
             </div>
-            <span className="wordmark">turboscout</span>
+            <span className="wordmark">TurboScout</span>
           </div>
         </div>
         <div className="nav-center">
