@@ -4,7 +4,6 @@ import StarRating from './StarRating';
 import ChipSelect from './ChipSelect';
 import CycleButton from './CycleButton';
 import BigStepper from './BigStepper';
-import ToggleButton from './ToggleButton';
 import QRCode from 'qrcode';
 import './Scout.css';
 
@@ -91,24 +90,12 @@ const Scout = () => {
   };
 
   const getTotalScore = () => {
-    let score = 0;
-    
-    score += formData.auto.fuel * 2;
-    if (formData.auto.climb === 'Climb' || formData.auto.climb === 'Pullup') score += 15;
-    if (formData.auto.wonAuto) score += 4;
-    
-    score += getTotalFuel();
-    
-    if (formData.endgame.climbLevel === 'Level 1') score += 10;
-    if (formData.endgame.climbLevel === 'Level 2') score += 20;
-    if (formData.endgame.climbLevel === 'Level 3') score += 30;
-    
-    return score;
+    return getAutoScore() + getTotalFuel() + getEndgameScore();
   };
 
   const getAutoScore = () => {
     let score = 0;
-    score += formData.auto.fuel * 2;
+    score += formData.auto.fuel;
     if (formData.auto.climb === 'Climb' || formData.auto.climb === 'Pullup') score += 15;
     if (formData.auto.wonAuto) score += 4;
     return score;
@@ -123,7 +110,7 @@ const Scout = () => {
   };
 
   const defenseTags = ['Aggressive', 'Smart driver', 'Feeds', 'Protected', 'Disruptive'];
-  const keywordOptions = ['Fast', 'Reliable', 'Accurate', 'Strategic', 'Cooperative', 'Clutch'];
+  const keywordOptions = ['Aggressive', 'High-scorer', 'Defensive', 'Feeder', 'Bump', 'Fast', 'Accurate', 'Cooperative'];
 
   const FIELDS = [
     'match',

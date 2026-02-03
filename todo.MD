@@ -2,21 +2,19 @@
 
 # To-do
 
----
-
 ## General
 
-- Add heatmap tracking?
+---
+
+- Darkmode
 
 ---
 
 ## Scout Page
 
-- Add keyboard binds
-  - Click into a section and click "space" for example to add increment and "shift" to remove increment
 - Uncap fuel counter from 100 -> 1000
 - Improve mobile compatibility
-  - Team selection going off-screen
+  - Team selection going off-screen, detect when this happens and adjust the CSS to make it fit
 - Improve playstyle labels (more in-depth keywords than exist)
   - Agressive, high-scorer, defensive, feeder, uses bump, very fast
 
@@ -37,3 +35,13 @@
   - For example: Team X is fast and is frequently top-scorer, also uses bump a TON
 - Predict how to counter the opposing team
   - For example: During deactivated shift spread out fuel and guard the bump to prevent entry
+
+---
+
+## Future
+
+- Add keyboard binds
+  - Click into a section and click "space" for example to add increment and "shift" to remove increment
+- Add heatmap tracking
+
+---

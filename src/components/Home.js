@@ -17,7 +17,7 @@ const Home = ({ onNavigate }) => {
       <div className="island-card">
         <div className="island-header">
           <h2>Welcome to TurboScout</h2>
-          <p className="island-subtitle">Your Ultimate FRC Scouting Assistant</p>
+          <p className="island-subtitle">No Sign-ups. No Installs. Modern Scouting.</p>
         </div>
         <div className="tiles-container">
           <IslandTile

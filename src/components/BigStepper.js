@@ -1,7 +1,7 @@
 import React from 'react';
 import './BigStepper.css';
 
-const BigStepper = ({ label, value, onChange, increment = 1, min = 0, max = 100 }) => {
+const BigStepper = ({ label, value, onChange, increment = 1, min = 0, max = 1000 }) => {
   return (
     <div className="big-stepper">
       <label className="big-stepper-label">{label}</label>

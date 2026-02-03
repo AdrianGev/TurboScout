@@ -44,6 +44,8 @@
   transition: all 0.2s;
   color: #4b5563;
   background: #f3f4f6;
+  flex: 1;
+  min-width: 0;
 }
 
 .position-btn:hover {
@@ -57,4 +59,43 @@
   border-color: #3b82f6;
   color: white;
   transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .alliance-position-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    padding: 16px;
+  }
+  
+  .position-buttons {
+    gap: 6px;
+  }
+  
+  .position-btn {
+    width: auto;
+    height: 50px;
+    font-size: 16px;
+    max-width: 80px;
+  }
+}
+
+@media (max-width: 480px) {
+  .alliance-position-grid {
+    padding: 12px;
+  }
+  
+  .position-buttons {
+    gap: 4px;
+  }
+  
+  .position-btn {
+    height: 45px;
+    font-size: 14px;
+    max-width: 70px;
+  }
+  
+  .alliance-header {
+    font-size: 18px;
+  }
 }
