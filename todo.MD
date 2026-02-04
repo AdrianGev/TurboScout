@@ -2,18 +2,18 @@
 
 # To-do
 
-## General
+## Settings
 
 ---
 
-- Darkmode
+- Add setting to enable option-focused increment buttons
+  - Split into 3 buttons so you can do +1 +4 or +10 as options as an example (credits to @kcnan for the idea)
 
 ---
 
 ## Scout Page
 
-- Improve mobile compatibility
-  - Team selection going off-screen, detect when this happens and adjust the CSS to make it fit
+- None
 
 ---
 
